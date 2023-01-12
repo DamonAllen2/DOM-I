@@ -54,7 +54,13 @@ middleImg.src = siteContent.images['accent-img'];
 
 //footer
 
+const contact = document.querySelector('section.contact');
+contact.children[0].textContent = siteContent.contact['contact-h4'];
+contact.children[1].textContent = siteContent.contact['address'];
+contact.children[2].textContent = siteContent.contact['phone'];
+contact.children[3].textContent = siteContent.contact['email'];
+
 const footerAnchor = document.querySelector('footer a');
 footerAnchor.className = ('bold');
 footerAnchor.textContent = ('Copyright Great Idea! 2021');
-console.log(footerAnchor);
+console.log(footerAnchor); 
