@@ -41,6 +41,47 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('test 6!')
 
+//header
+
+const headerAnchor = document.querySelector('header nav');
+headerAnchor.children[0].textContent = siteContent.nav['nav-item-1'];
+headerAnchor.children[1].textContent = siteContent.nav['nav-item-2'];
+headerAnchor.children[2].textContent = siteContent.nav['nav-item-3'];
+headerAnchor.children[3].textContent = siteContent.nav['nav-item-4'];
+headerAnchor.children[4].textContent = siteContent.nav['nav-item-5'];
+headerAnchor.children[5].textContent = siteContent.nav['nav-item-6'];
+headerAnchor.children[0].classList = ('italic');
+headerAnchor.children[1].classList = ('italic');
+headerAnchor.children[2].classList = ('italic');
+headerAnchor.children[3].classList = ('italic');
+headerAnchor.children[4].classList = ('italic');
+headerAnchor.children[5].classList = ('italic');
+
+//title and button
+
+const title = document.querySelector('.cta-text');
+title.children[0].textContent = siteContent.cta['h1'];
+title.children[1].textContent = siteContent.cta['button'];
+
+//top
+
+const topContent = document.querySelector('.top-content');
+topContent.children[0].children[0].textContent = siteContent['main-content']['features-h4'];
+topContent.children[0].children[1].textContent = siteContent['main-content']['features-content'];
+topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4'];
+topContent.children[1].children[1].textContent = siteContent['main-content']['about-content'];
+console.log(topContent);
+
+//bottom
+
+const bottomContent = document.querySelector('.bottom-content');
+bottomContent.children[0].children[0].textContent = siteContent['main-content']['services-h4'];
+bottomContent.children[0].children[1].textContent = siteContent['main-content']['services-content'];
+bottomContent.children[1].children[0].textContent = siteContent['main-content']['product-h4'];
+bottomContent.children[1].children[1].textContent = siteContent['main-content']['product-content'];
+bottomContent.children[2].children[0].textContent = siteContent['main-content']['vision-h4'];
+bottomContent.children[2].children[1].textContent = siteContent['main-content']['vision-content'];
+
 //Image section
 
 const headerImg = document.querySelector('#logo-img');
@@ -63,4 +104,3 @@ contact.children[3].textContent = siteContent.contact['email'];
 const footerAnchor = document.querySelector('footer a');
 footerAnchor.className = ('bold');
 footerAnchor.textContent = ('Copyright Great Idea! 2021');
-console.log(footerAnchor); 
