@@ -39,4 +39,22 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+console.log('test 6!')
+
+//Image section
+
+const headerImg = document.querySelector('#logo-img');
+headerImg.src = siteContent.images['logo-img'];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent.images['cta-img'];
+
+const middleImg = document.querySelector('#middle-img');
+middleImg.src = siteContent.images['accent-img'];
+
+//footer
+
+const footerAnchor = document.querySelector('footer a');
+footerAnchor.className = ('bold');
+footerAnchor.textContent = ('Copyright Great Idea! 2021');
+console.log(footerAnchor);
